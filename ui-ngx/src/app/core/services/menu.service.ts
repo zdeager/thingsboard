@@ -598,34 +598,34 @@ export class MenuService {
         path: '/devices',
         icon: 'devices_other'
       },
-      {
-        id: guid(),
-        name: 'entity-view.entity-views',
-        type: 'link',
-        path: '/entityViews',
-        icon: 'view_quilt'
-      }
+      // {
+      //   id: guid(),
+      //   name: 'entity-view.entity-views',
+      //   type: 'link',
+      //   path: '/entityViews',
+      //   icon: 'view_quilt'
+      // }
     );
-    if (authState.edgesSupportEnabled) {
-      sections.push(
-        {
-          id: guid(),
-          name: 'edge.edge-instances',
-          type: 'link',
-          path: '/edgeInstances',
-          icon: 'router'
-        }
-      );
-    }
-    sections.push(
-      {
-        id: guid(),
-        name: 'dashboard.dashboards',
-        type: 'link',
-        path: '/dashboards',
-        icon: 'dashboard'
-      }
-    );
+    // if (authState.edgesSupportEnabled) {
+    //   sections.push(
+    //     {
+    //       id: guid(),
+    //       name: 'edge.edge-instances',
+    //       type: 'link',
+    //       path: '/edgeInstances',
+    //       icon: 'router'
+    //     }
+    //   );
+    // }
+    // sections.push(
+    //   {
+    //     id: guid(),
+    //     name: 'dashboard.dashboards',
+    //     type: 'link',
+    //     path: '/dashboards',
+    //     icon: 'dashboard'
+    //   }
+    // );
     return sections;
   }
 
